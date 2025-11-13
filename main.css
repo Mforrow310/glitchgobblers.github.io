@@ -214,6 +214,46 @@ code {
 @media (max-width: 600px) {
   .table th, .table td { padding: 0.55rem; }
 }
+.plan-arch-container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.collapse-btn {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  margin: 1rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.collapse-btn:hover {
+  filter: brightness(1.1);
+}
+
+.collapse-section {
+  display: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.collapse-section.open {
+  display: block;
+}
+
+.arch-img, .plan-img {
+  width: 100%;
+  border-radius: 10px;
+}
 
 
 /* Simple responsiveness */
@@ -269,3 +309,4 @@ code {
   transform: translateY(-3px);
 
 }
+
