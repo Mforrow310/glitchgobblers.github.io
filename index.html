@@ -19,7 +19,7 @@
         <a href="#about">About</a>
         <a href="#documents">Documents</a>
         <a href="#game-steup">Game &amp; Setup</a>
-          <a href="#plan">Plan</a>
+        <a href="#plan-arch">Plan & Arch</a>
         <a href="#repo">Code Repo</a>
         
       </nav>
@@ -120,11 +120,24 @@ You win by escaping and making it “home” after finding your way out. Sprint 
         </div>
       </div>
     </section>
-    <section id="plan">
-  <div class="plan-container">
-    <h2>Weekly systematic Plan for Project</h2>
 
-    <div class="table-wrap">
+    <section id="plan-arch">
+  <div class="plan-arch-container">
+    <h2>Plan & Architecture</h2>
+
+    
+    <button class="collapse-btn" onclick="toggleSection('arch-content')">
+      Architecture (Click to Expand)
+    </button>
+    <div id="arch-content" class="collapse-section">
+      <img src="Pics/Arch.png" alt="Architecture Diagram" class="arch-img">
+    </div>
+
+    <button class="collapse-btn" onclick="toggleSection('plan-content')">
+      Weekly Systematic Plan (Click to Expand)
+    </button>
+    <div id="plan-content" class="collapse-section">
+      <div class="table-wrap">
       <table class="table">
         <thead>
           <tr>
@@ -348,6 +361,8 @@ You win by escaping and making it “home” after finding your way out. Sprint 
         </tbody>
       </table>
     </div>
+    </div>
+
   </div>
 </section>
 
@@ -395,6 +410,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       nav.classList.toggle('open');
     });
   }
+    function toggleSection(id) {
+  const section = document.getElementById(id);
+  section.classList.toggle("open");
+}
 
 
 </script>
