@@ -163,7 +163,7 @@ You win by escaping and making it “home” after finding your way out. Sprint 
     <h2>Plan & Architecture</h2>
 
     <button class="collapse-btn" onclick="toggleSection('test-content')">
-      Architecture (Click to Expand)
+      Testing (Click to Expand)
     </button>
     <div id="test-content" class="collapse-section">
       <h3> Test Report</h3>
@@ -173,6 +173,34 @@ You win by escaping and making it “home” after finding your way out. Sprint 
       <br><br>
       <p>1.3: testBridgeCollapse - testing correctness (bridge collapses when interacted with the player), tested to ensure another obstacle for the player to overcome, tested on Jan 6th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
       <br><br>
+      <p>1.4: bridgeRepairTest - testing correctness (bridge should be repaired after collapsing), tested so that the player can still use the bridge after the collapse event, tested on Jan 6th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>2.1: winTest -  testing correctness (if the player stands on the WinCondition tile it should trigger victory), tested so that the player can win the game, tested on Jan 4th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>2.2: loseTest - testing correctness (if the timer runs out and the player hasn’t won yet, the game ends), tested so that the player can lose the game, tested on Jan 4th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>2.3: testScoreCalculation - testing correctness (score calculated should match expected calculation), tested so the player’s score is accurate to what it should be, tested on Jan 7th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>3.1: testTimerStartPauseResume - testing correctness (timer should be running/not running at the appropriate time), tested so that the timer runs normally but isn’t running while the game is paused, tested on Jan7th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>3.2: testTimePauses - testing correctness (timer shouldn’t decrease while paused), tested so that the player’s score doesn’t change while the game is paused, tested on Jan 7th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>3.3: timerCountsDownToZero - testing correctness (timer should stay counting down to 0), tested so while the game is playing the timer doesn’t stop, tested on Jan 7th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>4.1: testTileWithObstacleIsNotSafe - testing correctness (whether the tile is safe), tested to ensure whether the tile is safe, tested on ?, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>5.1: testMovementRightChangesPosition - testing correctness (the player should move right when the correct key is pressed), tested so that the player is able to move right, tested on Dec 14th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>5.2: testMovementRightSetsDirection - testing correctness (the player direction should change when the player has moved right), tested so that the player’s direction matches the direction of movement, tested on Dec 14th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>6.1: rightCode - testing correctness (when the right code is inputted, event2 should increment), tested so that the event counter increases when the player successfully completes an event, tested on Jan 5th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>6.2: wrongCodeTest - testing correctness (when the wrong code is inputted, the dean should spawn), tested so that the dean spawns to chase the player when they input the wrong code, tested on Jan 8th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>6.3: testStoneRemoval - testing correctness (when the right code is entered, the stone should disappear and once all stones are removed, the stone barrier should be disabled and event2 should reflect that), tested so that the player can progress past the stone barrier, tested on Jan 8th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <h3>Traceability Matrix</h3>
+      <img src="Pics/matrix.png" alt="matrix table" class="arch-img">
     </div>
       
     <button class="collapse-btn" onclick="toggleSection('arch-content')">
