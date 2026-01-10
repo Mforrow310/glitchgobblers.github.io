@@ -162,7 +162,19 @@ You win by escaping and making it “home” after finding your way out. Sprint 
   <div class="plan-arch-container">
     <h2>Plan & Architecture</h2>
 
-    
+    <button class="collapse-btn" onclick="toggleSection('test-content')">
+      Architecture (Click to Expand)
+    </button>
+    <div id="test-content" class="collapse-section">
+      <h3> Test Report</h3>
+      <p>1.1: testKeyDisappears - testing correctness (key should disappear when player interacts with it), tested to ensure the player knows they have picked up the key, tested on Jan 6th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>1.2: testCrateDisappearsWithKey - testing correctness (crate should disappear when key has been picked up), tested so it is possible for the player to progress once they have unlocked the crate, tested on Jan 6th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+      <p>1.3: testBridgeCollapse - testing correctness (bridge collapses when interacted with the player), tested to ensure another obstacle for the player to overcome, tested on Jan 6th, tested in group meeting, written by Luiz, executed by Luiz, analysed by Alastair, test PASSED</p>
+      <br><br>
+    </div>
+      
     <button class="collapse-btn" onclick="toggleSection('arch-content')">
       Architecture (Click to Expand)
     </button>
